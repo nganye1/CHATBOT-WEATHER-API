@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <title>Magical Planner</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="welcome">
+                <h1>Plan your next <i>HEPIK</i> trip with us</h1>
+
+                <button id="welcome-button" type="button">Start chat</button>
+            </div>
+
+            <div id="chat-screen"></div>
+
+            <div id="input">
+                <label for="chat-input"></label>
+                <input type="text" name="chat" id="chat-input" placeholder="Enter your response">
+
+                <div class="icon">
+                    <svg id="send" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40">
+                        <path d="M176-183q-20 8-38-3.5T120-220v-180l320-80-320-80v-180q0-22 18-33.5t38-3.5l616 260q25 11 25 37t-25 37L176-183Z"/>
+                    </svg>
+
+                    <svg class="hidden" id="progress">
+                        <circle class="path" cx="20" cy="20" r="16" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
+                    </svg>
+                </div>
+            </div>
+        </main>
+
+        <script type="module" src="./js/utilities.js"></script>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
